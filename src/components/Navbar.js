@@ -18,6 +18,13 @@ function Navbar({ setIsLoggedIn }) {
     history.push("/login");
   }
 
+  // function handleClick() {
+  //   // logout the user
+  //   onLogout();
+  //   // then navigate them to the login page
+  //   history.push("/login");
+  // }
+
   return (
     <div>
       <NavLink
@@ -54,6 +61,9 @@ function Navbar({ setIsLoggedIn }) {
         Login
       </NavLink>
       <button onClick={handleLogout}>Logout</button>
+      {/* <nav>
+      <button onClick={handleClick}>Logout</button>
+    </nav> */}
     </div>
   );
 }
